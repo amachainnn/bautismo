@@ -1,21 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-/*
-
-.cinzel {
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-}
-
-.cormorant {
-  font-family: "Cormorant SC", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-*/
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
 
 * {
     box-sizing: border-box;
@@ -82,13 +65,13 @@
   }
   
   .hero-content {
-    background: url('index-bg.png') no-repeat center center;
+    background: url('index-bg-small.png') no-repeat center center;
     padding-bottom: 5rem;
   }
   
   .hero-content .fecha {
     font-size: 1.2rem;
-    margin-top: 490px;
+    margin-top: 450px;
     font-family: 'Cinzel', serif;
     font-weight: 400;
     color:#000000;
@@ -125,7 +108,7 @@
   }
   
   .itinerario, .regalo, .confirmacion {
-    padding: 2rem;
+    padding: 2rem 0;
     background: #f9f9f9;
     text-align: center;
   }
