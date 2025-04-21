@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bautismo Isa</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Bautismo Isa</span></h1>
+      <button class="hamburger" id="hamburger">&#9776;</button>
+      <ul class="nav-items" id="nav-items">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#itinerario">Itinerario</a></li>
+        <li><a href="#regalo">Regalo</a></li>
+        <li><a href="#confirmacion">Asistencia</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <p class="fecha">12 de Octubre de 2025</p>
+      <h2 class="save-date">Save the Date</span></h2>
+    </div>
+  </section>
+
+  <section class="itinerario" id="itinerario">
+    <h2>Itinerario</h2>
+    <div class="eventos">
+      <div class="evento">
+        <div class="card">
+          <img src="iglesia.png" alt="Parroquia Nuestra Señora de la Inmaculada Concepción">
+          <h3>Parroquia Nuestra Señora de la Inmaculada Concepción</h3>
+          <p>José Cubas 3599, C1419GMI, CABA</p>
+          <p class="horarios">12:00 horas</p>
+          <a href="https://maps.app.goo.gl/md7uCXuFioa6abCG7" class="card-map">Mapa</a>
+        </div>
+      </div>
+      <div class="evento">
+        <div class="card">
+          <img src="fiesta.png" alt="Espacio Arena Golf">
+          <h3>Espacio Arena Golf</h3>
+          <p>Colectora Oeste Ramal Pilar, B1667, Tortuguitas, BA</p>
+          <p class="horarios">14:00 horas</p>
+          <a href="https://maps.app.goo.gl/fCKtjxfMQcQJtS82A" class="card-map">Mapa</a>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="regalo" id="regalo">
+    <h2 class="mb-2">Regalo</h2>
+    <p class="mb-2"><b>Lo importante es tu presencia</b> pero si queres hacernos un regalo, podés hacerlo a esta cuenta bancaria:</p>
+    <p class="mb-2"><b>Alias:</b> pieza.paz.marca</p>
+    <p class="mb-2"><b>CBU:</b> 0170999940000025246517</p>
+    <p class="mb-2"><b>Destinatario:</b> Carolina Machain</p>
+    <p><b>CUIT:</b> 27309793981</p>
+  </section>
+
+  <section class="confirmacion" id="confirmacion">
+    <h2 class="mb-2">Confirmar asistencia</h2>
+    <form id="formulario">
+      <label for="nombre">Nombre y Apellido</label>
+      <input type="text" id="nombre" name="nombre" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="comida">Preferencia de comida</label>
+      <select id="comida" name="comida" required>
+        <option value="">Seleccionar</option>
+        <option value="Tradicional">Tradicional</option>
+        <option value="Vegetariana">Vegetariana</option>
+        <option value="Vegana">Vegana</option>
+      </select>
+
+      <label for="invitado">¿Llevás un invitado adicional?</label>
+      <select id="invitado" name="invitado" required>
+        <option value="">Seleccionar</option>
+        <option value="Sí">Sí</option>
+        <option value="No">No</option>
+      </select>
+
+      <button id="submit" type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
