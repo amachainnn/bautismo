@@ -25,7 +25,7 @@
   }
   
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     padding: 0.5rem 0;
     color: #fafafa;
     font-family: 'Cinzel', serif;
@@ -57,7 +57,7 @@
   
   .hamburger {
     display: none;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     background: none;
     border: none;
   }
@@ -274,12 +274,6 @@
     font-weight: 200;
     font-size: 1rem;
     border: 1px solid #ccc;
-    border-radius: 4px; /* <- este detalle importa */
-    background-color: white;
-    color: #333;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
   }
   
   button {
