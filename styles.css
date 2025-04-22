@@ -197,6 +197,8 @@
   form {
     width: 80%;
   }
+
+  
   
   #regalo {
     background: url('1v.PNG') repeat;
@@ -272,6 +274,12 @@
     font-weight: 200;
     font-size: 1rem;
     border: 1px solid #ccc;
+    border-radius: 4px; /* <- este detalle importa */
+    background-color: white;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
   }
   
   button {
