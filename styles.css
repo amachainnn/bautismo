@@ -2,7 +2,7 @@
 
 :root {
   --color-bg: #fdfbf3;
-  --color-text: #33503a;
+  --color-text: #2b3d2b;
   /*
   --color-green-dark: #506a60;
   --color-green-light: #a5b3a7;
@@ -62,7 +62,7 @@ body {
   padding: 0;
   background-color: var(--color-bg);
   color: var(--color-text);
-  background: url(bg-main.png) no-repeat 0 0;
+  background: url(bg-main.png) no-repeat center 0;
 }
 
 .main {
@@ -103,7 +103,7 @@ body {
 }
 
 .wedding {
-  margin-top: 80px;
+  margin-top: 70px;
 }
 
 .wedding h1 {
