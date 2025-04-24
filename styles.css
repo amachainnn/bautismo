@@ -133,3 +133,18 @@ body {
   font-style: normal;
   font-size: 1.8em;
 }
+
+.baptism div {
+  position: relative;
+}
+
+.baptism div span {
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%); 
+  font-size: 0.90em;
+  padding: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
