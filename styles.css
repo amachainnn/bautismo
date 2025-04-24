@@ -81,7 +81,7 @@ body {
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 300;
-  margin-top: -14px;
+  margin-bottom: 0px;
 }
 
 .intro p span {
@@ -102,6 +102,7 @@ body {
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 300;
+  margin-bottom: 0px;
 }
 
 .wedding {
@@ -113,37 +114,43 @@ body {
   text-transform: uppercase;
 }
 
-.wedding p:first-child {
-  font-size: 0.8em;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-bottom: -15px;
-}
-
-.wedding p:last-child {
+.wedding p{
   font-size: 1.2em;
   text-transform: uppercase;
   font-weight: 300;
-  margin-top: -18px;
+  margin-bottom: 0px;
 }
 
 #and {
   font-family: "Tangerine", cursive;
-  font-weight: 600;
+  font-weight: 800;
   font-style: normal;
-  font-size: 1.8em;
+  font-size: 1.2em;
 }
 
 .baptism div {
   position: relative;
 }
 
-.baptism div span {
+.baptism div #bautismo {
   position: absolute;
-  top: 300px;
+  top: 290px;
   left: 50%;
-  transform: translateX(-50%); 
-  font-size: 0.9em;
+  transform: translateX(-50%);
+  padding: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.wedding div {
+  position: relative;
+}
+
+.wedding div #wedding {
+  position: absolute;
+  top: 290px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 0;
   font-weight: 500;
   text-transform: uppercase;
