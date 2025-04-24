@@ -1,8 +1,10 @@
 /* PALETTE */
 
 :root {
-  --color-bg: #fcf8f5;
+  --color-bg-primary: #fcf8f5;
+  --color-bg-secondary: #F4F0ED;
   --color-text: #3b453c;
+  --color-text-secondary: #282f29;
   /*
   --color-green-dark: #506a60;
   --color-green-light: #a5b3a7;
@@ -59,7 +61,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-primary);
   color: var(--color-text);
   background:
   url(repeat.png) repeat,
@@ -70,6 +72,8 @@ body {
   url(main-bottom-sm.png) no-repeat center bottom ;
   padding: 170px 0;
 }
+
+/* INTRO */
 
 .intro h1 {
   font-size: 4em;
@@ -89,6 +93,8 @@ body {
   font-weight: 400;
 }
 
+/* BAPTISM */
+
 .baptism {
   margin-top: 80px;
 }
@@ -104,6 +110,22 @@ body {
   font-weight: 300;
   margin-bottom: 0px;
 }
+
+.baptism div {
+  position: relative;
+}
+
+.baptism div #bautismo {
+  position: absolute;
+  top: 290px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* WEDDING */ 
 
 .wedding {
   margin-top: 70px;
@@ -128,20 +150,6 @@ body {
   font-size: 1.2em;
 }
 
-.baptism div {
-  position: relative;
-}
-
-.baptism div #bautismo {
-  position: absolute;
-  top: 290px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 0;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
 .wedding div {
   position: relative;
 }
@@ -155,3 +163,86 @@ body {
   font-weight: 500;
   text-transform: uppercase;
 }
+
+/* EVENTS */
+
+.events {
+  background: url(events-top-sm.png) var(--color-bg-secondary) no-repeat center top;
+  padding: 180px 0;
+}
+
+.ceremonia h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.ceremonia p{
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.ceremonia p:nth-of-type(2),
+.ceremonia p:nth-of-type(3)  {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.ceremonia p:nth-of-type(3)  {
+  font-weight: 400;
+}
+
+.ceremonia .map {
+  background-color: var(--color-text-secondary);
+  color: var(--color-bg-primary);
+  font-size: 0.8em;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+}
+
+.ceremonia .map:hover {
+  background-color: var(--color-text);
+} 
+
+.fiesta {
+  margin-top: 100px;
+}
+
+.fiesta h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.fiesta p{
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.fiesta p:nth-of-type(2),
+.fiesta p:nth-of-type(3)  {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.fiesta p:nth-of-type(3)  {
+  font-weight: 400;
+}
+
+.fiesta .map {
+  background-color: var(--color-text-secondary);
+  color: var(--color-bg-primary);
+  font-size: 0.8em;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+}
+
+.fiesta .map:hover {
+  background-color: var(--color-text);
+} 
