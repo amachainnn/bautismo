@@ -70,7 +70,7 @@ body {
 
 .main {
   background: url(main-top-sm.png) no-repeat center top,
-  url(main-bottom-sm.png) no-repeat center bottom ;
+  url(main-bottom-sm.png) no-repeat center bottom;
   padding: 170px 0;
 }
 
@@ -169,7 +169,6 @@ body {
 
 .events {
   background: url(events-top-sm.jpeg) var(--color-bg-secondary) no-repeat center top;
-  padding: 180px 0;
 }
 
 .ceremonia h2 {
@@ -213,7 +212,8 @@ body {
 .fiesta h2 {
   font-size: 2.5em;
   text-transform: uppercase;
-  background: url(glasses.png) no-repeat center top;
+  background:
+  url(glasses.png) no-repeat center top;
   padding-top: 60px;
 }
 
@@ -245,11 +245,17 @@ body {
 } 
 
 
-/* EVENTS */
+/* DRESS CODE */
 
 .dress-code {
-  background-color: var(--color-bg-primary);
-  padding: 100px 0px;
+  background: url(parte-2.png) no-repeat center top var(--color-bg-primary);
+  padding: 0px 0px;
+}
+
+.dress-bottom {
+  margin: 0px;
+  padding: 120px 0;
+  background: url(part-1.png) no-repeat center bottom;
 }
 
 .dress-code h2 {
@@ -274,7 +280,7 @@ body {
 /* PRESENTS */
 
 .presents {
-  background-color: var(--color-bg-secondary);
+  background: url(part-2.png) no-repeat center top var(--color-bg-secondary);
   padding: 100px 0px;
 }
 
@@ -302,4 +308,10 @@ body {
 .presents p:nth-of-type(3) {
   font-size: 0.8em;
   margin-top: 5px;
+}
+
+.bottom {
+  margin: 0px;
+  padding: 180px 0;
+  background: url(parte-1.png) no-repeat center bottom;
 }
