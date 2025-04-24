@@ -59,14 +59,17 @@
 
 body {
   margin: 0;
-  padding: 200px 0;
   background-color: var(--color-bg);
   color: var(--color-text);
   background: url(bg-main.png) no-repeat 0 0;
 }
 
+.main {
+  padding: 200px 0;
+}
+
 .baptism h1 {
-  font-size: 3em;
+  font-size: 4em;
   text-transform: uppercase;
 }
 
@@ -81,7 +84,7 @@ body {
 }
 
 .intro h2 {
-  font-size: 5em;
+  font-size: 6em;
   padding: 0;
 }
 
