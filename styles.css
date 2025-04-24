@@ -174,6 +174,8 @@ body {
 .ceremonia h2 {
   font-size: 2.5em;
   text-transform: uppercase;
+  background: url(book.png) no-repeat center top;
+  padding-top: 60px;
 }
 
 .ceremonia p{
@@ -214,6 +216,8 @@ body {
 .fiesta h2 {
   font-size: 2.5em;
   text-transform: uppercase;
+  background: url(glasses.png) no-repeat center top;
+  padding-top: 60px;
 }
 
 .fiesta p{
