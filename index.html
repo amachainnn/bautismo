@@ -1,117 +1,46 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bautismo Isa</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bautismo Isa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
 
-  <header>
-    <nav class="navbar">
-      <h1 class="logo">Bautismo Isa</span></h1>
-      <button class="hamburger" id="hamburger">&#9776;</button>
-      <ul class="nav-items" id="nav-items">
-        <li><a href="#inicio">Bautismo</a></li>
-        <li><a href="#casamiento">Casamiento</a></li>
-        <li><a href="#dress-code">Dress Code</a></li>
-        <li><a href="#itinerario">Itinerario</a></li>
-        <li><a href="#regalo">Regalo</a></li>
-        <li><a href="#confirmacion">Asistencia</a></li>
-      </ul>
-    </nav>
-  </header>
+  <body>
 
-  <section class="hero" id="inicio">
-    <div class="hero-content">
-      <p class="polaroid">Bautismo Isa</p>
-      <p class="fecha">12 de Octubre de 2025</p>
-      <h2 class="save-date">Save the Date</span></h2>
-      <p class="hero-text">Nos encantaría que vengas</p>
-    </div>
-  </section>
+    <section class="main">
 
-  <section class="casamiento" id="casamiento">
-    <div class="casamiento-content">
-      <p class="casamiento-text">Y ya que estamos tenemos otra invitación para vos</p>
-      <p class="polaroid">¡Nos casamos!</p>
-    </div>
-  </section>
+      <section class="baptism">
+        <h1 class="text-center playfair-regular">Isabella</h1>
+        <p class="text-center montserrat-regular">Bautismo</p>
+      </section>
 
-  <section class="dress-code" id="dress-code">
-    <h2 class="mb-2">Dress Code</h2>
-    <p class="mb-2">Elegante | Etiqueta</p>
-    <p class="dress-code-sm">(vestido para ellas, traje para ellos)</p>
-  </section>
+      <section class="intro">
+        <p class="text-center montserrat-regular">12 de Octubre de 2025</p>
+        <h2 class="text-center tangerine-regular">Save the Date</h2>
+        <p class="text-center montserrat-regular">Compartí este día con nosotros</p>
+      </section>
 
-  <section class="itinerario" id="itinerario">
-    <h2>Itinerario</h2>
-    <div class="eventos">
-      <div class="evento">
-        <div class="card">
-          <img src="iglesia.png" alt="Parroquia Nuestra Señora de la Inmaculada Concepción">
-          <h3>Parroquia Nuestra Señora de la Inmaculada Concepción</h3>
-          <p>José Cubas 3599, C1419GMI, CABA</p>
-          <p class="horarios">10:00 horas</p>
-          <a href="https://maps.app.goo.gl/md7uCXuFioa6abCG7" class="card-map">Mapa</a>
-        </div>
-      </div>
-      <div class="evento">
-        <div class="card">
-          <img src="fiesta.png" alt="Espacio Arena Golf">
-          <h3>Espacio Arena Golf</h3>
-          <p>Colectora Oeste Ramal Pilar, B1667, Tortuguitas</p>
-          <p class="horarios">13:00 horas</p>
-          <a href="https://maps.app.goo.gl/fCKtjxfMQcQJtS82A" class="card-map">Mapa</a>
-          </div>
-      </div>
-    </div>
-  </section>
+      <section class="wedding">
+        <p class="text-center montserrat-regular">Y ya que estamos...</p>
+        <h1 class="text-center playfair-regular">Caro & Diego</h1>
+        <p class="text-center montserrat-regular">Casamiento</p>
+      </section>
 
-  <section class="regalo" id="regalo">
-    <h2 class="mb-2">Regalo</h2>
-    <p class="mb-2"><b>Lo importante es tu presencia</b> pero si queres hacernos un regalo, podés hacerlo a esta cuenta bancaria:</p>
-    <p class="mb-2"><b>Alias:</b> pieza.paz.marca</p>
-    <p class="mb-2"><b>CBU:</b> 0170999940000025246517</p>
-    <p><b>Destinatario:</b> Carolina Machain</p>
-  </section>
+    </section>
 
-  <section class="confirmacion" id="confirmacion">
-    <h2 class="mb-2">Confirmar asistencia</h2>
-    <form id="formulario">
-      <label for="nombre">Nombre y apellido</label>
-      <input type="text" id="nombre" name="nombre" required />
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required />
 
-      <label for="comida">Preferencia de comida</label>
-      <select id="comida" name="comida" required>
-        <option value="">Seleccionar</option>
-        <option value="Tradicional">Tradicional</option>
-        <option value="Celiaca">Celíaca</option>
-        <option value="Vegetariana">Vegetariana</option>
-        <option value="Vegana">Vegana</option>
-      </select>
 
-      <label for="invitado">¿Llevás un invitado adicional?</label>
-      <select id="invitado" name="invitado" required>
-        <option value="">Seleccionar</option>
-        <option value="Sí">Sí</option>
-        <option value="No">No</option>
-      </select>
 
-      <p>* Por favor confirmar asistencia del <b>5 de agosto</b></p>
 
-      <button id="submit" type="submit">Enviar</button>
-    </form>
-  </section>
 
-  <script src="scripts.js"></script>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
 </html>

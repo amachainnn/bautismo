@@ -1,383 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap');
+/* PALETTE */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+  --color-bg: #fdfbf3;
+  --color-text: #294134;
+  /*
+  --color-green-dark: #506a60;
+  --color-green-light: #a5b3a7;
+  --color-rose: #eecfcf;
+  --color-beige: #f2e9db;
+  --color-accent: #c2bfae;
+  */
+}
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: url(1v.png) repeat;
-    padding: 0rem 2rem;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .logo {
-    font-size: 1.7rem;
-    padding: 0.5rem 0;
-    color: #fafafa;
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-  }
-
-  .smaller {
-    font-size: 1.3rem;
-  }
-  
-  .nav-items {
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-    height:100vh;
-  }
-
-  .nav-items li:first-child {
-    margin-top: 50px;
-  }
-
-  .nav-items li {
-    margin-top: 20px;
-  }
-  
-  .nav-items li a {
-    text-decoration: none;
-    color: #fafafa;
-    font-family: 'Cinzel', serif;
-    font-size: 1.3rem;
-    font-weight: 300;
-  }
-  
-  .hamburger {
-    display: none;
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-  }
-  
-  .hero {
-    background: url('2v.PNG') repeat;
-    color: #fafafa;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-  }
-  
-  .hero-content {
-    background: url('index-bg-small.png') no-repeat center 50px;
-    padding-bottom: 5rem;
-  }
-
-  .hero .polaroid {
-    font-size: 2.75rem !important;
-    font-family: 'Cinzel', serif;
-    font-weight: 600;
-    color:#000000;
-    margin-top: 430px;
-  }
-
-  .hero-content .fecha {
-    font-size: 1.2rem;
-    margin-top: 80px;
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-    color:#000000;
-  }
-
-  .hero .save-date {
-    font-size: 2.5rem !important;
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-    color:#000000;
-  }
-
-  .hero-content .hero-text {
-    font-size: 1.2rem;
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-    color:#000000;
-    margin-top: -10px;
-  }
-
-  .hero .save-date .save {
-    font-size: 2rem;
-    font-weight: 500;
-  }
-
-  .hero h1 .smaller {
-    font-size: 1.9rem;
-  }
-  
-  .hero .save-date {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-  
-  .hero .mensaje {
-    font-size: 1.2rem;
-  }
-
-  .casamiento {
-    background: url('3v.PNG') repeat;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center; 
-  }
-
-  .casamiento-text {
-    font-size: 1.2rem;
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-    color:#000000;
-    margin-top: 80px;
-  }
-
-  .casamiento-content {
-    background: url('casamiento.png') no-repeat center 160px;
-  }
-
-  .casamiento .polaroid {
-    font-size: 2.25rem !important;
-    font-family: 'Cinzel', serif;
-    font-weight: 600;
-    color:#000000;
-    margin-top: 395px;
-    margin-bottom: 100px;
-  }
+/* FONTS */
 
 
-  #itinerario {
-    background: url('3v.PNG') repeat;
-  }
-  
-  .itinerario, .regalo, .confirmacion, .dress-code {
-    padding: 2rem 0;
-    background: #f9f9f9;
-    text-align: center;
-  }
+.playfair-regular {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .itinerario h2 {
-    font-family: 'Cinzel', serif;
-    font-weight: 400;;
-  }
-  
-  .eventos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-  }
-  
-  .evento {
-    flex: 1;
-  }
+.playfair-bold {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 
-  .evento .card {
-    margin: 20px auto;
-    width: 400px;
-    background-color: #F5F5F5;
-    padding-bottom: 20px;
-  }
+.montserrat-regular {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .evento img {
-    width: 100%;
-    padding: 20px;
-  }
+.montserrat-bold {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 
-  .evento h3 {
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-    text-align: center;
-  }
-  
-  .horarios {
-    margin-bottom: 30px;
-  }
-  .evento p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    margin-top: 20px;
-  }
+.tangerine-regular {
+  font-family: "Tangerine", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 
-  .evento a {
-    text-decoration: none;
-    font-size: 1rem;
-    background: url(1v.png) repeat;
-    padding: 0.25rem 0.75rem;
-    border: 2px solid #000000;
-    color: #fafafa;
-  }
+.tangerine-bold {
+  font-family: "Tangerine", cursive;
+  font-weight: 700;
+  font-style: normal;
+}
 
-  .evento a:hover {
-    background: url(2v.png) repeat;
-    border: 2px solid #000000;
-    color: #000000;
-  }
+/* MAIN */
 
-  form {
-    width: 80%;
-  }
+body {
+  margin: 0;
+  padding: 200px 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  background: url(bg-main.png) no-repeat 0 0;
+}
 
-  .dress-code h2 {
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-    color: #fafafa;
-  }
+.baptism h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
 
-  .dress-code p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-    color: #fafafa;
-    font-weight: 200;
-  }
-  
-  .dress-code .dress-code-sm {
-    font-size: 0.8rem;
-  }
-  
-  #regalo, #dress-code {
-    background: url('1v.PNG') repeat;
-  }
+.baptism p {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
 
-  .regalo h2 {
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-    color: #fafafa;
-  }
+.intro {
+  margin-top: 80px;
+}
 
-  .regalo p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1em;
-    color: #fafafa;
-    font-weight: 200;
-  }
+.intro h2 {
+  font-size: 5em;
+  padding: 0;
+}
 
-  .regalo .mb-2, .dress-code .mb-2 {
-    margin-bottom: 20px;  
-  } 
+.intro p {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
 
-  .regalo h2 {
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-    color: #fafafa;
-  }
+.intro p:first-child {
+  margin-bottom: 0px;
+}
 
-  .regalo p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    color: #fafafa;
-    font-weight: 200;
-  }
+.intro p:last-child {
+  margin-top: -14px;
+}
 
-  .confirmacion {
-    background-image: url(2v.png);
-  }
+.wedding {
+  margin-top: 80px;
+}
 
-  .confirmacion h2 {
-    font-family: 'Cinzel', serif;
-    font-weight: 400;
-    margin-bottom: 10px;
-  }
+.wedding h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+}
 
-  .confirmacion label {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    font-weight: 300;
-    margin-top: 10px;
-  }
+.wedding p:first-child {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
 
-  .confirmacion p {
-    margin-top: 20px;
-    font-size: 0.8rem;
-    background-image: url(3v.png);
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    border: 2px solid black;
-  }
-  
-  form {
-    max-width: 500px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-  
-  input, select, button {
-    padding: 0.75rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 200;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-  }
-  
-  button {
-    color: white;
-    cursor: pointer;
-    border: none;
-  }
+.wedding p:last-child {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: 300;
+}
 
-  #submit {
-    margin: 10px auto;
-    font-size: 0.9rem;
-    background: url(1v.png) repeat;
-    padding: 0.5rem 0.5rem;
-    border: 2px solid #000000;
-    color: #fafafa;
-    font-weight: 400;
-    cursor: pointer;
-    width: 100px;
-  }
-
-  #submit:hover {
-    background: url(3v.png) repeat;
-    border: 2px solid #000000;
-    color: #000000;
-  }
-  
-  /* Responsive */
-  @media (max-width: 768px) {
-    .nav-items {
-      display: none;
-      flex-direction: column;
-      background: url(1v.png) repeat;
-      position: absolute;
-      top: 50px;
-      right: 0;
-      width: 100%;
-      text-align: center;
-      padding: 1rem;
-      color: #fafafa;
-    }
-  
-    .nav-items.show {
-      display: flex;
-    }
-  
-    .hamburger {
-      display: block;
-    }
-  
-    .eventos {
-      flex-direction: column;
-    }
-  
-    .hero h1 {
-      font-size: 2.5rem;
-    }
-  }
-  
