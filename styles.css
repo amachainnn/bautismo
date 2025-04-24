@@ -3,6 +3,7 @@
 :root {
   --color-bg-primary: #fcf8f5;
   --color-bg-secondary: #F4F0ED;
+  --color-bg-terciary: #D1D1D1;
   --color-text: #3b453c;
   --color-text-secondary: #282f29;
   /*
@@ -191,10 +192,6 @@ body {
   margin-top: 5px;
 }
 
-.ceremonia p:nth-of-type(3)  {
-  font-weight: 400;
-}
-
 .ceremonia .map {
   background-color: var(--color-text-secondary);
   color: var(--color-bg-primary);
@@ -233,10 +230,6 @@ body {
   margin-top: 5px;
 }
 
-.fiesta p:nth-of-type(3)  {
-  font-weight: 400;
-}
-
 .fiesta .map {
   background-color: var(--color-text-secondary);
   color: var(--color-bg-primary);
@@ -250,3 +243,30 @@ body {
 .fiesta .map:hover {
   background-color: var(--color-text);
 } 
+
+
+/* EVENTS */
+
+.dress-code {
+  background-color: var(--color-bg-primary);
+  padding: 100px 0px;
+}
+
+.dress-code h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  background: url(dress.png) no-repeat center top;
+  padding-top: 110px;
+}
+
+.dress-code p{
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+.dress-code p:nth-of-type(2) {
+  font-size: 0.8em;
+  margin-top: 5px;
+}
