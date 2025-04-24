@@ -1,7 +1,7 @@
 /* PALETTE */
 
 :root {
-  --color-bg: #fdfbf3;
+  --color-bg: #fcf8f5;
   --color-text: #3b453c;
   /*
   --color-green-dark: #506a60;
@@ -13,7 +13,6 @@
 }
 
 /* FONTS */
-
 
 .playfair-regular {
   font-family: "Playfair Display", serif;
@@ -62,11 +61,14 @@ body {
   padding: 0;
   background-color: var(--color-bg);
   color: var(--color-text);
-  background: url(bg-main.png) no-repeat center 0;
+  background:
+  url(repeat.png) repeat,
 }
 
 .main {
-  padding: 200px 0;
+  background: url(main-top-sm.png) no-repeat center top,
+  url(main-bottom-sm.png) no-repeat center bottom ;
+  padding: 170px 0;
 }
 
 .intro h1 {
