@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
 
   <body>
@@ -17,12 +18,12 @@
 
     <section class="main text-center">
 
-      <section class="intro">
+      <section class="intro reveal">
         <p class="montserrat-regular">5 <span>de</span> Octubre <span>de</span> 2025</p>
         <h1 class="tangerine-regular">Save the Date</h1>
       </section>
 
-      <section class="baptism">
+      <section class="baptism reveal">
         <p class="montserrat-regular">Bautismo</p>
         <h2 class="playfair-regular">Isabella</h2>
         <div class="text-center">
@@ -31,7 +32,7 @@
         </div>
       </section>
 
-      <section class="wedding">
+      <section class="wedding reveal">
         <p class="montserrat-regular">Nos casamos</p>
         <h2 class="playfair-regular">Caro <span id="and">&</span> Diego</h2>
         <div class="text-center">
@@ -48,7 +49,7 @@
 
       <div class="bottom">
 
-        <section class="ceremonia">
+        <section class="ceremonia reveal">
           <h2 class="playfair-regular">Ceremonia</h2>
           <p class="montserrat-regular">Parroquia Nuestra Señora de la Inmaculada Concepción</p>
           <p class="montserrat-regular">José Cubas 3599, C1419GMI, CABA</p> 
@@ -58,7 +59,7 @@
           </div>    
         </section>
 
-        <section class="fiesta">
+        <section class="fiesta reveal">
           <h2 class="playfair-regular">Fiesta</h2>
           <p class="montserrat-regular">Espacio Arena Golf
           </p>
@@ -79,10 +80,11 @@
 
       <div class="dress-bottom">
 
-        <h2 class="playfair-regular">Dress Code</h2>
-        <p class="montserrat-regular">Etiqueta</p>
-        <p class="montserrat-regular">Código de vestimenta</p>
-
+        <div class="reveal">
+          <h2 class="playfair-regular">Dress Code</h2>
+          <p class="montserrat-regular">Etiqueta</p>
+          <p class="montserrat-regular">Código de vestimenta</p>
+        </div>
       </div>
 
     </section>
@@ -90,63 +92,75 @@
     <!-- PRESENTS -->
 
     <section class="presents text-center">
-
         <div class="presents-bottom">
-
-          <h2 class="playfair-regular">Luna de Miel</h2>
-          <p class="montserrat-regular">Colaboraciones</p>
-          <section class="mt-5">
-            <p class="montserrat-regular">Cuenta en pesos</p>
-            <p class="montserrat-regular"><b>Alias</b> pieza.paz.marca</p>
-            <p class="montserrat-regular"><b>CBU</b> 0170999940000025246517</p>
-          </section>  
-          <section class="mt-5">
-            <p class="montserrat-regular">Cuenta en dolares</p>
-            <p class="montserrat-regular"><b>Alias</b> ficha.letra.enero</p>
-            <p class="montserrat-regular"><b>CBU</b> 0170999944000063453153</p>
-          </section>  
-
+          <div class="reveal">
+            <h2 class="playfair-regular">Luna de Miel</h2>
+            <p class="montserrat-regular">Colaboraciones</p>
+            <section class="mt-5">
+              <p class="montserrat-regular">Cuenta en pesos</p>
+              <p class="montserrat-regular"><b>Alias</b> pieza.paz.marca</p>
+              <p class="montserrat-regular"><b>CBU</b> 0170999940000025246517</p>
+            </section>  
+            <section class="mt-5">
+              <p class="montserrat-regular">Cuenta en dolares</p>
+              <p class="montserrat-regular"><b>Alias</b> ficha.letra.enero</p>
+              <p class="montserrat-regular"><b>CBU</b> 0170999944000063453153</p>
+            </section> 
+          </div>
         </div>
-
   </section>
 
   <!-- CONFIRMACIÓN DE ASISTENCIA -->
    
   <section class="confirmacion text-center" id="confirmacion" style="padding: 100px 20px;">
 
-    <h2 class="playfair-regular">ASISTENCIA</h2>
-    <p class="montserrat-regular">Confirmar antes del 5 de agosto</p>
+    <div class="reveal">
+      <h2 class="playfair-regular">ASISTENCIA</h2>
+      <p class="montserrat-regular">Confirmar antes del 5 de agosto</p>
 
-    <form id="formularioRSVP">
-      <div class="mb-3">
-        <input type="text" name="nombre" placeholder="Nombre y apellido" required class="form-control text-center" />
-      </div>
-      <div class="mb-3">
-        <input type="email" name="email" placeholder="Correo electrónico" required class="form-control text-center" />
-      </div>
-      <div class="mb-3">
-        <select name="comida" required class="form-control">
-          <option value="" disabled selected>Preferencia de comida</option>
-          <option value="Tradicional">Tradicional</option>
-          <option value="Vegetariana">Vegetariana</option>
-          <option value="Vegana">Vegana</option>
-          <option value="Celíaca">Celíaca</option>
-        </select>
-      </div>
-      <div class="mb-3">
-        <select name="invitado" required class="form-control">
-          <option value="" disabled selected>¿Asistís con invitado?</option>
-          <option value="Sí">Sí</option>
-          <option value="No">No</option>
-        </select>
-      </div>
-      <button type="submit" class="enviar">Enviar</button>
-    </form>
-    <p id="mensajeExito" style="display:none; margin-top: 20px;" class="montserrat-regular">¡Gracias por confirmar tu asistencia!</p>
+      <form id="formularioRSVP">
+        <div class="mb-3">
+          <input type="text" name="nombre" placeholder="Nombre y apellido" required class="form-control text-center" />
+        </div>
+        <div class="mb-3">
+          <input type="email" name="email" placeholder="Correo electrónico" required class="form-control text-center" />
+        </div>
+        <div class="mb-3">
+          <select name="comida" required class="form-control">
+            <option value="" disabled selected>Preferencia de comida</option>
+            <option value="Tradicional">Tradicional</option>
+            <option value="Vegetariana">Vegetariana</option>
+            <option value="Vegana">Vegana</option>
+            <option value="Celíaca">Celíaca</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <select name="invitado" required class="form-control">
+            <option value="" disabled selected>¿Asistís con invitado?</option>
+            <option value="Sí">Sí</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <button type="submit" class="enviar">Enviar</button>
+      </form>
+      <p id="mensajeExito" style="display:none; margin-top: 20px;" class="montserrat-regular">¡Gracias por confirmar tu asistencia!</p>
+    </div>
 
   </section>
 
-
+    <!-- TIME -->
+    
+    <section class="contador text-center">
+      <div class="reveal">
+        <h2 class="playfair-regular">Faltan</h2>
+        <div id="countdown">
+          <div><span id="days">00</span><p>días</p></div>
+          <div><span id="hours">00</span><p>horas</p></div>
+          <div><span id="minutes">00</span><p>minutos</p></div>
+          <div><span id="seconds">00</span><p>segundos</p></div>
+        </div>
+      </div>
+    </section>
 
 
 
@@ -155,5 +169,49 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+
+    <script>
+      function revealOnScroll() {
+        const reveals = document.querySelectorAll(".reveal");
+    
+        for (let i = 0; i < reveals.length; i++) {
+          const windowHeight = window.innerHeight;
+          const elementTop = reveals[i].getBoundingClientRect().top;
+          const elementVisible = 150;
+    
+          if (elementTop < windowHeight - elementVisible) {
+            reveals[i].classList.add("active");
+          }
+        }
+      }
+    
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll); 
+    </script>
+    <script>
+        const countdown = () => {
+        const countDate = new Date("Oct 5, 2025 00:00:00").getTime();
+        const now = new Date().getTime();
+        const gap = countDate - now;
+    
+        const second = 1000;
+        const minute = second * 60;
+        const hour = minute * 60;
+        const day = hour * 24;
+    
+        const textDay = Math.floor(gap / day);
+        const textHour = Math.floor((gap % day) / hour);
+        const textMinute = Math.floor((gap % hour) / minute);
+        const textSecond = Math.floor((gap % minute) / second);
+    
+        document.getElementById("days").innerText = textDay.toString().padStart(2, '0');
+        document.getElementById("hours").innerText = textHour.toString().padStart(2, '0');
+        document.getElementById("minutes").innerText = textMinute.toString().padStart(2, '0');
+        document.getElementById("seconds").innerText = textSecond.toString().padStart(2, '0');
+      };
+    
+      setInterval(countdown, 1000);
+    </script>
+    
   </body>
 </html>
