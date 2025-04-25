@@ -91,20 +91,61 @@
 
     <section class="presents text-center">
 
-        <h2 class="playfair-regular">Luna de Miel</h2>
-        <p class="montserrat-regular">Colaboraciones</p>
-        <section class="mt-5">
-          <p class="montserrat-regular">Cuenta en pesos</p>
-          <p class="montserrat-regular"><b>Alias</b> pieza.paz.marca</p>
-          <p class="montserrat-regular"><b>CBU</b> 0170999940000025246517</p>
-        </section>  
-        <section class="mt-5">
-          <p class="montserrat-regular">Cuenta en dolares</p>
-          <p class="montserrat-regular"><b>Alias</b> ficha.letra.enero</p>
-          <p class="montserrat-regular"><b>CBU</b> 0170999944000063453153</p>
-        </section>  
+        <div class="presents-bottom">
+
+          <h2 class="playfair-regular">Luna de Miel</h2>
+          <p class="montserrat-regular">Colaboraciones</p>
+          <section class="mt-5">
+            <p class="montserrat-regular">Cuenta en pesos</p>
+            <p class="montserrat-regular"><b>Alias</b> pieza.paz.marca</p>
+            <p class="montserrat-regular"><b>CBU</b> 0170999940000025246517</p>
+          </section>  
+          <section class="mt-5">
+            <p class="montserrat-regular">Cuenta en dolares</p>
+            <p class="montserrat-regular"><b>Alias</b> ficha.letra.enero</p>
+            <p class="montserrat-regular"><b>CBU</b> 0170999944000063453153</p>
+          </section>  
+
+        </div>
 
   </section>
+
+  <!-- CONFIRMACIÓN DE ASISTENCIA -->
+   
+  <section class="confirmacion text-center" id="confirmacion" style="padding: 100px 20px;">
+
+    <h2 class="playfair-regular">ASISTENCIA</h2>
+    <p class="montserrat-regular">Confirmar antes del 5 de agosto</p>
+
+    <form id="formularioRSVP">
+      <div class="mb-3">
+        <input type="text" name="nombre" placeholder="Nombre y apellido" required class="form-control text-center" />
+      </div>
+      <div class="mb-3">
+        <input type="email" name="email" placeholder="Correo electrónico" required class="form-control text-center" />
+      </div>
+      <div class="mb-3">
+        <select name="comida" required class="form-control">
+          <option value="" disabled selected>Preferencia de comida</option>
+          <option value="Tradicional">Tradicional</option>
+          <option value="Vegetariana">Vegetariana</option>
+          <option value="Vegana">Vegana</option>
+          <option value="Celíaca">Celíaca</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <select name="invitado" required class="form-control">
+          <option value="" disabled selected>¿Asistís con invitado?</option>
+          <option value="Sí">Sí</option>
+          <option value="No">No</option>
+        </select>
+      </div>
+      <button type="submit" class="enviar">Enviar</button>
+    </form>
+    <p id="mensajeExito" style="display:none; margin-top: 20px;" class="montserrat-regular">¡Gracias por confirmar tu asistencia!</p>
+
+  </section>
+
 
 
 

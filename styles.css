@@ -281,6 +281,11 @@ body {
 
 .presents {
   background: url(part-2.png) no-repeat center top var(--color-bg-secondary);
+  padding: 0px 0px;
+}
+
+.presents-bottom {
+  background: url(partecita-1.png) no-repeat center bottom;
   padding: 100px 0px;
 }
 
@@ -314,4 +319,87 @@ body {
   margin: 0px;
   padding: 180px 0;
   background: url(parte-1.png) no-repeat center bottom;
+}
+
+/* CONFIRMACIÓN */
+
+.confirmacion {
+  background: url(partecita-2.png) no-repeat center top var(--color-bg-secondary);
+}
+
+.confirmacion h2 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  background: url(envelope.png) no-repeat center top;
+  padding-top: 90px;
+}
+
+.confirmacion p{
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 50px;
+}
+
+.confirmacion form div{
+  width: 300px;
+  margin: auto;
+}
+
+.confirmacion input,
+.confirmacion select {
+  max-width: 400px;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.confirmacion input {
+  font-size: 0.8em;
+}
+
+.confirmacion ::placeholder {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.confirmacion select {
+  text-align: center;
+  text-align-last: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 0.8em;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+}
+
+.confirmacion .enviar {
+  background-color: var(--color-text-secondary);
+  color: var(--color-bg-primary);
+  font-size: 0.8em;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  border: none;
+  margin-top: 20px;
+}
+
+.confirmacion .enviar:hover {
+  background-color: var(--color-text);
+} 
+
+.confirmacion input {
+  text-align: center;
 }
