@@ -189,8 +189,8 @@ body {
 .ceremonia h2 {
   font-size: 2.5em;
   text-transform: uppercase;
-  background: url(book.png) no-repeat center top;
-  padding-top: 60px;
+  background: url(icon-church.png) no-repeat center top;
+  padding-top: 120px;
 }
 
 .ceremonia p{
@@ -228,8 +228,8 @@ body {
   font-size: 2.5em;
   text-transform: uppercase;
   background:
-  url(glasses.png) no-repeat center top;
-  padding-top: 60px;
+  url(icon-party.png) no-repeat center top;
+  padding-top: 120px;
 }
 
 .fiesta p{
@@ -276,7 +276,7 @@ body {
 .dress-code h2 {
   font-size: 2.5em;
   text-transform: uppercase;
-  background: url(dress.png) no-repeat center top;
+  background: url(icon-dress.png) no-repeat center top;
   padding-top: 110px;
 }
 
@@ -307,7 +307,7 @@ body {
 .presents h2 {
   font-size: 2.5em;
   text-transform: uppercase;
-  background: url(presents.png) no-repeat center top;
+  background: url(icon-presents.png) no-repeat center 20px;
   padding-top: 110px;
 }
 
@@ -345,7 +345,7 @@ body {
 .confirmacion h2 {
   font-size: 2.5em;
   text-transform: uppercase;
-  background: url(envelope.png) no-repeat center top;
+  background: url(icon-env.png) no-repeat center top;
   padding-top: 90px;
 }
 
@@ -450,6 +450,8 @@ body {
 .contador h2 {
   font-size: 2.5em;
   text-transform: uppercase;
+  background: url(icon-time.png) no-repeat center 5px;
+  padding-top: 90px;
 }
 
 #countdown div {
