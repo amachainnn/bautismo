@@ -424,6 +424,12 @@ body {
   text-align: center;
 }
 
+.confirmacion p span {
+  font-size: 0.6em;
+  font-weight: 400;
+}
+
+
 
 /* TIME */
 
