@@ -27,8 +27,7 @@
         <p class="montserrat-regular">Bautismo</p>
         <h2 class="playfair-regular">Isabella</h2>
         <div class="text-center">
-          <img src="index-bg-small.png" alt="Bautismo Isa">
-          <img src="bautismo.png" alt="Bautismo" id="bautismo">
+          <img src="isa-pola.png" alt="Bautismo Isa">
         </div>
       </section>
 
@@ -36,8 +35,7 @@
         <p class="montserrat-regular">Nos casamos</p>
         <h2 class="playfair-regular">Caro <span id="and">&</span> Diego</h2>
         <div class="text-center">
-          <img src="casamiento.png" alt="Casamiento Caro y Diego">
-          <img src="rings.png" alt="Casamiento" id="wedding">
+          <img src="diegoycaropola.png" alt="Casamiento Caro y Diego">
         </div>
       </section>
 
@@ -82,7 +80,7 @@
 
         <div class="reveal">
           <h2 class="playfair-regular">Dress Code</h2>
-          <p class="montserrat-regular">Etiqueta</p>
+          <p class="montserrat-regular">Elegante Sport</p>
           <p class="montserrat-regular">Código de vestimenta</p>
         </div>
       </div>
@@ -118,7 +116,7 @@
       <h2 class="playfair-regular">ASISTENCIA</h2>
       <p class="montserrat-regular">Confirmar antes del 5 de agosto</p>
 
-      <form id="formularioRSVP">
+      <form id="formularioRSVP" onsubmit="return enviarFormulario();">
         <div class="mb-3">
           <input type="text" name="nombre" placeholder="Nombre y apellido" required class="form-control text-center" />
         </div>
@@ -161,9 +159,15 @@
         </div>
       </div>
     </section>
+<!---->
+    <section>
+      <h1>Respuesta de Confirmación de Asistencia</h1>
+      <p><b>Nombre y apellido:</b> {{nombre}}</p>
+      <p><b>Email:</b> {{email}}</p>
+      <p><b>Preferencia de comida:</b> {{comida}}</p>
+      <p><b>Asiste con invitado:</b> {{invitado}}</p>
 
-
-
+    </section>
 
 
 
@@ -211,6 +215,24 @@
       };
     
       setInterval(countdown, 1000);
+    </script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init("EyGl58ZZwAUdbtXkY");
+      })();
+    </script>
+    <script>
+      function enviarFormulario() {
+        emailjs.sendForm('service_ciycazt', 'template_fvkdxna', '#formularioRSVP')
+          .then(function(response) {
+            alert("¡Gracias por confirmar tu asistencia!");
+          }, function(error) {
+            alert("Ocurrió un error. Por favor intentá más tarde.");
+            console.log(error);
+          });
+        return false;
+      }
     </script>
     
   </body>
