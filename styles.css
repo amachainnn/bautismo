@@ -487,18 +487,11 @@ footer p:nth-of-type(2){
 
 /* MODAL */
 
-.modal {
-  margin: 100px auto 0px;
-}
-
 .modal-dialog {
-  max-width: 400px;
-}
-
-@media (max-width: 576px) {
-  .modal-dialog {
-    width: 350px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; 
 }
 
 .modal-header {
