@@ -479,7 +479,8 @@ body {
 #countdown p {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-size: 0.8em;
+  font-size: 0.6em;
+  font-weight: 400;
 }
 
 /* FOOTER */
