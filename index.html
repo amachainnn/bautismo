@@ -33,7 +33,7 @@
 
       <section class="wedding reveal">
         <p class="montserrat-regular">Casamiento</p>
-        <h2 class="playfair-regular">Caro <span id="and">&</span> Diego</h2>
+        <h2 class="playfair-regular">Diego <span id="and">&</span> Caro</h2>
         <div class="text-center">
           <img src="diegoycaropola.png" alt="Casamiento Caro y Diego">
         </div>
@@ -142,7 +142,6 @@
         </div>
         <button type="submit" class="enviar">Enviar</button>
       </form>
-      <p id="mensajeExito" style="display:none; margin-top: 20px;" class="montserrat-regular">¡Gracias por confirmar tu asistencia!</p>
     </div>
 
   </section>
@@ -167,6 +166,25 @@
       <p>Full Stack Developer</p>
     </footer>
 
+    <!-- MODAL -->
+
+    <div class="modal fade" id="modalExito" tabindex="-1" aria-labelledby="modalExitoLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content text-center">
+          <div class="modal-header text-center">
+            <h2 class="modal-title text-center" id="confirmationModalLabel">Confirmación</h2>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Gracias por confirmar tu asistencia</p>
+            <p>Ante cualquier consulta o inconveniente no dudes en avisarnos</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>  
 
 
 
@@ -224,7 +242,8 @@
       function enviarFormulario() {
         emailjs.sendForm('service_ciycazt', 'template_fvkdxna', '#formularioRSVP')
           .then(function(response) {
-            alert("¡Gracias por confirmar tu asistencia!");
+            var modal = new bootstrap.Modal(document.getElementById('modalExito'));
+            modal.show();
           }, function(error) {
             alert("Ocurrió un error. Por favor intentá más tarde.");
             console.log(error);
@@ -232,6 +251,7 @@
         return false;
       }
     </script>
+    
     
   </body>
 </html>
