@@ -492,7 +492,8 @@ footer p:nth-of-type(2){
 }
 
 .modal-dialog {
-  width: 380px;
+  width: 80% !important;
+  max-width: 400px;
 }
 
 .modal-header {
