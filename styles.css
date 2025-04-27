@@ -494,6 +494,18 @@ footer p:nth-of-type(2){
   min-height: 100vh; 
 }
 
+@media (min-width: 577px) {
+  .modal-dialog {
+    width: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .modal-dialog {
+    width: 350px;
+  }
+}
+
 .modal-header {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
