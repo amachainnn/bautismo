@@ -492,8 +492,19 @@ footer p:nth-of-type(2){
 }
 
 .modal-dialog {
-  width: 80% !important;
-  max-width: 400px;
+  max-width: 100%;
+  margin: 1.75rem auto;
+}
+
+@media (max-width: 576px) {
+  .modal-dialog {
+    margin: 0.5rem; /* Reducir el margen para pantallas pequeñas */
+    width: 90%; /* Hacer que el modal ocupe el 90% del ancho */
+  }
+}
+
+.modal-content {
+  overflow: hidden;
 }
 
 .modal-header {
