@@ -142,8 +142,6 @@
         </div>
         <button type="submit" class="enviar">Enviar</button>
       </form>
-      <p id="mensajeExito" style="display:none; margin-top: 20px;" class="montserrat-regular">¡Gracias por confirmar tu asistencia!</p>
-    </div>
 
   </section>
 
@@ -167,6 +165,23 @@
       <p>Full Stack Developer</p>
     </footer>
 
+<!-- MODAL DE CONFIRMACIÓN -->
+<div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-custom-top">
+    <div class="modal-content text-center">
+      <div class="modal-header justify-content-center">
+        <h2 class="modal-title playfair-regular" id="modalConfirmacionLabel">Asistencia</h2>
+      </div>
+      <div class="modal-body montserrat-regular">
+        <p>¡Tu confirmación fue enviada correctamente!</p>
+	<p>Ante cualquier duda o consulta no dudes en avisarnos</p>
+      </div>
+      <div class="modal-footer justify-content-center">
+        <button type="button" class="btn" data-bs-dismiss="modal">Volver</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -222,15 +237,16 @@
     </script>
     <script>
       function enviarFormulario() {
-        emailjs.sendForm('service_ciycazt', 'template_fvkdxna', '#formularioRSVP')
-          .then(function(response) {
-            alert("¡Gracias por confirmar tu asistencia!");
-          }, function(error) {
-            alert("Ocurrió un error. Por favor intentá más tarde.");
-            console.log(error);
-          });
-        return false;
-      }
+  emailjs.sendForm('service_ciycazt', 'template_fvkdxna', '#formularioRSVP')
+    .then(function(response) {
+      const modal = new bootstrap.Modal(document.getElementById('modalConfirmacion'));
+      modal.show();
+    }, function(error) {
+      alert("Ocurrió un error. Por favor intentá más tarde.");
+      console.log(error);
+    });
+  return false;
+}
     </script>
     
   </body>

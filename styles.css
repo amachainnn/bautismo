@@ -519,3 +519,62 @@ footer p:nth-of-type(2){
 }
 
 
+/* MODAL */
+
+.modal-custom-top {
+  align-items: flex-start;
+}
+
+.modal {
+  margin-top: 150px;
+}
+
+.modal h2 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.modal p:nth-of-type(1) {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0px;
+  padding: 50px 0 0;
+  background: url(icon-env-sm.png) no-repeat center top
+}
+
+.modal p:nth-of-type(2) {
+  font-size: 0.6em;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+.modal .btn {
+  background-color: var(--color-text-secondary);
+  color: var(--color-bg-primary);
+  font-size: 0.8em;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  border-radius: 0px;
+}
+
+.modal .btn:hover {
+  background-color: var(--color-text);
+} 
+
+
+.modal-dialog {
+  max-width: 400px;
+  width: 100%;
+  margin: auto;
+}
+
+@media (max-width: 400px) {
+  .modal-dialog {
+    width: 80%;
+  }
+}
