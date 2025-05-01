@@ -318,6 +318,13 @@ body {
   margin-bottom: 0px;
 }
 
+.presents-text   {
+  font-size: 0.9em !important;
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
 .presents section p:nth-of-type(1) {
   font-weight: 600;
   font-size: 0.8em;
