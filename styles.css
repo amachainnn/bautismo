@@ -103,7 +103,7 @@ body {
 .baptism p:nth-of-type(1){
   font-size: 0.9em;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 0px;
 }
 
@@ -142,7 +142,7 @@ body {
 .wedding p:nth-of-type(1){
   font-size: 0.9em;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 0px;
 }
 
