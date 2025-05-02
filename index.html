@@ -139,6 +139,9 @@
             <option value="No">No</option>
           </select>
         </div>
+        <div class="mb-3" id="nombreInvitadoContainer" style="display: none;">
+          <input type="text" name="nombre_invitado" id="nombreInvitado" placeholder="Nombre y apellido del invitado" class="form-control text-center" />
+        </div>        
         <button type="submit" class="enviar">Enviar</button>
       </form>
     </div>
@@ -248,6 +251,26 @@
       }
     </script>
 
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const selectInvitado = document.querySelector('select[name="invitado"]');
+        const nombreInvitadoContainer = document.getElementById('nombreInvitadoContainer');
+        const nombreInvitadoInput = document.getElementById('nombreInvitado');
+
+        selectInvitado.addEventListener('change', function () {
+          if (this.value === 'Sí') {
+            nombreInvitadoContainer.style.display = 'block';
+            nombreInvitadoInput.setAttribute('required', 'required');
+          } else {
+            nombreInvitadoContainer.style.display = 'none';
+            nombreInvitadoInput.removeAttribute('required');
+            nombreInvitadoInput.value = '';
+          }
+        });
+      });
+    </script>
+
+
     <!-- MODAL PERSONALIZADO -->
 
     <div id="modalConfirmacion" class="modal-overlay">
@@ -257,6 +280,7 @@
         <button onclick="cerrarModal()">Cerrar</button>
       </div>
     </div>
+
     
   </body>
 </html>
