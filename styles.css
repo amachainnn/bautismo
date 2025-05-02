@@ -327,7 +327,12 @@ body {
 /* CONFIRMACIÓN */
 
 .confirmacion {
-  background: url(partecita-2.png) no-repeat center top var(--color-bg-secondary);
+  background: url(parte-final-2.png) no-repeat center top var(--color-bg-secondary);
+}
+
+.confirmacion-bottom {
+  background: url(partezao-1.png) no-repeat center bottom;
+  padding: 100px 20px 170px;
 }
 
 .confirmacion h2 {
@@ -335,7 +340,7 @@ body {
   text-transform: uppercase;
   background: url(icon-env.png) no-repeat center top;
   padding-top: 95px;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .confirmacion p:nth-of-type(1){
@@ -425,8 +430,12 @@ body {
 /* TIME */
 
 .contador {
-  padding: 100px 0px;
-  background-color: var(--color-bg-primary);
+  background: url(partecita-2.png) no-repeat center top;
+}
+
+.contador-bottom {
+  padding: 150px 0px 100px;
+  background: url(parte-final-1.png) no-repeat center bottom;
 }
 
 #countdown {
@@ -469,8 +478,8 @@ body {
 /* FOOTER */
 
 footer {
-  background-color: var(--color-bg-secondary);
-  padding: 100px 0;
+  background: url(partezao-2.png) no-repeat center top;
+  padding: 150px 0;
 }
 
 footer p:nth-of-type(1){
