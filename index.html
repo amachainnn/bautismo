@@ -107,50 +107,10 @@
         </div>
   </section>
 
-  <!-- CONFIRMACIÓN DE ASISTENCIA -->
-   
-  <section class="confirmacion text-center" id="confirmacion" style="padding: 100px 20px;">
-
-    <div class="reveal">
-      <h2 class="playfair-regular">ASISTENCIA</h2>
-      <p class="montserrat-regular">5 <span>de</span> agosto <span>de</span> 2025</p>
-      <p class="montserrat-regular">Fecha limite para confirmar</p>
-
-      <form id="formularioRSVP" onsubmit="return enviarFormulario();">
-        <div class="mb-3">
-          <input type="text" name="nombre" placeholder="Nombre y apellido" required class="form-control text-center" />
-        </div>
-        <div class="mb-3">
-          <input type="email" name="email" placeholder="Correo electrónico" required class="form-control text-center" />
-        </div>
-        <div class="mb-3">
-          <select name="comida" required class="form-control">
-            <option value="" disabled selected>Preferencia de comida</option>
-            <option value="Tradicional">Tradicional</option>
-            <option value="Vegetariana">Vegetariana</option>
-            <option value="Vegana">Vegana</option>
-            <option value="Celíaca">Celíaca</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <select name="invitado" required class="form-control">
-            <option value="" disabled selected>¿Asistís con invitado?</option>
-            <option value="Sí">Sí</option>
-            <option value="No">No</option>
-          </select>
-        </div>
-        <div class="mb-3" id="nombreInvitadoContainer" style="display: none;">
-          <input type="text" name="nombre_invitado" id="nombreInvitado" placeholder="Nombre y apellido del invitado" class="form-control text-center" />
-        </div>        
-        <button type="submit" class="enviar">Enviar</button>
-      </form>
-    </div>
-
-  </section>
-
-    <!-- TIME -->
-    
-    <section class="contador text-center">
+  <!-- TIME -->
+  
+  <section class="contador text-center">
+    <div class="contador-bottom">
       <div class="reveal">
         <h2 class="playfair-regular">Faltan</h2>
         <div id="countdown">
@@ -160,7 +120,57 @@
           <div><span id="seconds">00</span><p>segundos</p></div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+
+  <!-- CONFIRMACIÓN DE ASISTENCIA -->
+   
+  <section class="confirmacion text-center" id="confirmacion">
+
+    <div class="confirmacion-bottom">
+
+      <div class="reveal">
+        <h2 class="playfair-regular">ASISTENCIA</h2>
+        <p class="montserrat-regular">5 <span>de</span> agosto <span>de</span> 2025</p>
+        <p class="montserrat-regular">Fecha limite para confirmar</p>
+
+        <form id="formularioRSVP" onsubmit="return enviarFormulario();">
+          <div class="mb-3">
+            <input type="text" name="nombre" placeholder="Nombre y apellido" required class="form-control text-center" />
+          </div>
+          <div class="mb-3">
+            <input type="email" name="email" placeholder="Correo electrónico" required class="form-control text-center" />
+          </div>
+          <div class="mb-3">
+            <select name="comida" required class="form-control">
+              <option value="" disabled selected>Preferencia de comida</option>
+              <option value="Tradicional">Tradicional</option>
+              <option value="Vegetariana">Vegetariana</option>
+              <option value="Vegana">Vegana</option>
+              <option value="Celíaca">Celíaca</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <select name="invitado" required class="form-control">
+              <option value="" disabled selected>¿Asistís con invitado?</option>
+              <option value="Sí">Sí</option>
+              <option value="No">No</option>
+            </select>
+          </div>
+          <div class="mb-3" id="nombreInvitadoContainer" style="display: none;">
+            <input type="text" name="nombre_invitado" id="nombreInvitado" placeholder="Nombre y apellido del invitado" class="form-control text-center" />
+          </div>        
+          <button type="submit" class="enviar">Enviar</button>
+        </form>
+      </div>
+
+    </div>
+
+  </section>
+
+
+    <!-- FOOTER -->
+    
 
     <footer class="text-center">
       <div class="reveal">
