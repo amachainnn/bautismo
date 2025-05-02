@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->  
   </head>
 
   <body>
@@ -24,16 +24,16 @@
       </section>
 
       <section class="baptism reveal">
-        <p class="montserrat-regular">Te invitamos al bautismo de </p>
+        <p class="montserrat-regular">Te invitamos al bautismo de</p>
         <h2 class="playfair-regular">Isabella</h2>
         <div class="text-center">
-          <img src="polaroid-isa.png" alt="Bautismo Isa">
+          <img src="isa-pola.png" alt="Bautismo Isa">
         </div>
       </section>
 
       <section class="wedding reveal">
         <p class="montserrat-regular">Y te queremos contar que nos casamos</p>
-        <h2 class="playfair-regular">Caro <span id="and">&</span> Diego</h2>
+        <h2 class="playfair-regular">Diego <span id="and">&</span> Caro</h2>
         <div class="text-center">
           <img src="diegoycaropola.png" alt="Casamiento Caro y Diego">
         </div>
@@ -92,7 +92,7 @@
         <div class="presents-bottom">
           <div class="reveal">
             <h2 class="playfair-regular">Luna de Miel</h2>
-            <p class="montserrat-regular presents-text">Nuestro mejor regalo es tu presencia, pero en el caso que deseen colaborar</p>
+            <p class="montserrat-regular">Colaboraciones</p>
             <section class="mt-5">
               <p class="montserrat-regular">Cuenta en pesos</p>
               <p class="montserrat-regular"><b>Alias</b> pieza.paz.marca</p>
@@ -141,6 +141,8 @@
         </div>
         <button type="submit" class="enviar">Enviar</button>
       </form>
+      <p id="mensajeExito" style="display:none; margin-top: 20px;" class="montserrat-regular">¡Gracias por confirmar tu asistencia!</p>
+    </div>
 
   </section>
 
@@ -159,28 +161,13 @@
     </section>
 
     <footer class="text-center">
-      <a href="https://www.instagram.com/alemchain/" target="_blank"><img src="am.png" alt="Alejandro Machain"></a>
-      <p>Alejandro Machain</p>
-      <p>Full Stack Developer</p>
+      <div class="reveal">
+        <a href="https://www.instagram.com/alemchain/" target="_blank"><img src="am.png" alt="Alejandro Machain"></a>
+        <p>Alejandro Machain</p>
+        <p>Full Stack Developer</p>
+      </div>  
     </footer>
 
-<!-- MODAL DE CONFIRMACIÓN -->
-<div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-labelledby="modalConfirmacionLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-custom-top">
-    <div class="modal-content text-center">
-      <div class="modal-header justify-content-center">
-        <h2 class="modal-title playfair-regular" id="modalConfirmacionLabel">Asistencia</h2>
-      </div>
-      <div class="modal-body montserrat-regular">
-        <p>¡Tu confirmación fue enviada correctamente!</p>
-	      <p>Ante cualquier no dudes en avisarnos</p>
-      </div>
-      <div class="modal-footer justify-content-center">
-        <button type="button" class="btn" data-bs-dismiss="modal">Volver</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 
 
@@ -236,16 +223,15 @@
     </script>
     <script>
       function enviarFormulario() {
-  emailjs.sendForm('service_ciycazt', 'template_fvkdxna', '#formularioRSVP')
-    .then(function(response) {
-      const modal = new bootstrap.Modal(document.getElementById('modalConfirmacion'));
-      modal.show();
-    }, function(error) {
-      alert("Ocurrió un error. Por favor intentá más tarde.");
-      console.log(error);
-    });
-  return false;
-}
+        emailjs.sendForm('service_ciycazt', 'template_fvkdxna', '#formularioRSVP')
+          .then(function(response) {
+            alert("¡Gracias por confirmar tu asistencia!");
+          }, function(error) {
+            alert("Ocurrió un error. Por favor intentá más tarde.");
+            console.log(error);
+          });
+        return false;
+      }
     </script>
     
   </body>

@@ -6,8 +6,27 @@
   --color-bg-terciary: #D1D1D1;
   --color-text: #3b453c;
   --color-text-secondary: #282f29;
-
+  /*
+  --color-green-dark: #506a60;
+  --color-green-light: #a5b3a7;
+  --color-rose: #eecfcf;
+  --color-beige: #f2e9db;
+  --color-accent: #c2bfae;
+  */
 }
+
+/* EMAIL 
+
+Name
+Gmail
+
+service ID
+service_ciycazt
+
+template ID
+template_fvkdxna
+
+*/
 
 /* FONTS */
 
@@ -53,10 +72,6 @@
 
 /* MAIN */
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -64,7 +79,6 @@ body {
   color: var(--color-text);
   background:
   url(repeat.png) repeat,
-  overflow-x: hidden;
 }
 
 .main {
@@ -83,7 +97,7 @@ body {
 }
 
 .intro p {
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 0px;
@@ -105,17 +119,10 @@ body {
   text-transform: uppercase;
 }
 
-.baptism p:nth-of-type(1){
+.baptism p {
   font-size: 0.9em;
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: 0px;
-}
-
-.baptism p:nth-of-type(2) {
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 300;
   margin-bottom: 0px;
 }
 
@@ -133,10 +140,6 @@ body {
   text-transform: uppercase;
 }
 
-.baptism img {
-  width: 250px;
-}
-
 /* WEDDING */ 
 
 .wedding {
@@ -148,17 +151,10 @@ body {
   text-transform: uppercase;
 }
 
-.wedding p:nth-of-type(1){
+.wedding p{
   font-size: 0.9em;
   text-transform: uppercase;
   font-weight: 400;
-  margin-bottom: 0px;
-}
-
-.wedding p:nth-of-type(2){
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 300;
   margin-bottom: 0px;
 }
 
@@ -201,7 +197,7 @@ body {
 .ceremonia p{
   font-size: 1.2em;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 0px;
 }
 
@@ -240,7 +236,7 @@ body {
 .fiesta p{
   font-size: 1.2em;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 0px;
 }
 
@@ -288,13 +284,8 @@ body {
 .dress-code p{
   font-size: 1.2em;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 0px;
-}
-
-.dress-code p:nth-of-type(2) {
-  font-size: 0.8em;
-  margin-top: 10px;
 }
 
 /* PRESENTS */
@@ -325,14 +316,6 @@ body {
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 0px;
-}
-
-.presents-text   {
-  font-size: 0.9em !important;
-  text-transform: uppercase;
-  font-weight: 300;
-  margin: 0px auto;
-  width: 350px;
 }
 
 .presents section p:nth-of-type(1) {
@@ -370,14 +353,14 @@ body {
 .confirmacion p:nth-of-type(1){
   font-size: 1.2em;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 10px;
 }
 
 .confirmacion p:nth-of-type(2){
   font-size: 0.8em;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 50px;
 }
 
@@ -388,7 +371,7 @@ body {
 
 .confirmacion input,
 .confirmacion select {
-  max-width: 400px;
+  max-width: 300px;
   margin: auto;
   margin-bottom: 15px;
   padding: 10px;
@@ -408,7 +391,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
   font-size: 1em;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   text-transform: uppercase;
 }
@@ -446,7 +429,7 @@ body {
 
 .confirmacion p span {
   font-size: 0.6em;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 
@@ -475,14 +458,14 @@ body {
 #countdown div {
   font-size: 1.2em;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 400;
   margin-bottom: 50px;
 }
 
 #countdown span {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
   font-size: 1.5em;
   display: block;
@@ -531,65 +514,3 @@ footer p:nth-of-type(2){
 }
 
 
-/* MODAL */
-.modal {
-  margin-top: 150px;
-}
-
-.modal h2 {
-  font-size: 2em;
-  text-transform: uppercase;
-}
-
-.modal p:nth-of-type(1) {
-  font-size: 0.8em;
-  text-transform: uppercase;
-  font-weight: 500;
-  margin-bottom: 0px;
-  padding: 50px 0 0;
-  background: url(icon-env-sm.png) no-repeat center top
-}
-
-.modal p:nth-of-type(2) {
-  font-size: 0.7em;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-top: 10px;
-  margin-bottom: 0px;
-}
-
-.modal .btn {
-  background-color: var(--color-text-secondary);
-  color: var(--color-bg-primary);
-  font-size: 0.8em;
-  font-weight: 600;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 0.5em 1em;
-  border-radius: 0px;
-}
-
-.modal .btn:hover {
-  background-color: var(--color-text);
-} 
-
-
-.modal-dialog {
-  max-width: 400px;
-  width: 100%;
-  margin: auto;
-}
-
-
-body.modal-open {
-  overflow: hidden !important;
-  padding-right: 0 !important;
-}
-
-.modal {
-  overflow-x: hidden;
-}
-
-html, body {
-  overflow-x: hidden;
-}
