@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-  <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->  
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
 
   <body>
@@ -141,7 +141,6 @@
         </div>
         <button type="submit" class="enviar">Enviar</button>
       </form>
-      <p id="mensajeExito" style="display:none; margin-top: 20px;" class="montserrat-regular">¡Gracias por confirmar tu asistencia!</p>
     </div>
 
   </section>
@@ -167,6 +166,7 @@
         <p>Full Stack Developer</p>
       </div>  
     </footer>
+    
 
 
 
@@ -191,6 +191,7 @@
       window.addEventListener("scroll", revealOnScroll);
       window.addEventListener("load", revealOnScroll); 
     </script>
+
     <script>
         const countdown = () => {
         const countDate = new Date("Oct 5, 2025 00:00:00").getTime();
@@ -215,24 +216,47 @@
     
       setInterval(countdown, 1000);
     </script>
+
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
     <script type="text/javascript">
+
       (function(){
         emailjs.init("EyGl58ZZwAUdbtXkY");
       })();
+
     </script>
+
     <script>
       function enviarFormulario() {
         emailjs.sendForm('service_ciycazt', 'template_fvkdxna', '#formularioRSVP')
           .then(function(response) {
-            alert("¡Gracias por confirmar tu asistencia!");
+            mostrarModal();
           }, function(error) {
             alert("Ocurrió un error. Por favor intentá más tarde.");
             console.log(error);
           });
         return false;
       }
+
+      function mostrarModal() {
+        document.getElementById('modalConfirmacion').style.display = 'flex';
+      }
+
+      function cerrarModal() {
+        document.getElementById('modalConfirmacion').style.display = 'none';
+      }
     </script>
+
+    <!-- MODAL PERSONALIZADO -->
+
+    <div id="modalConfirmacion" class="modal-overlay">
+      <div class="modal-contenido">
+        <h2 class="playfair-regular">Confirmación</h2>
+        <p class="montserrat-regular">Asistencia confirmada con éxito</p>
+        <button onclick="cerrarModal()">Cerrar</button>
+      </div>
+    </div>
     
   </body>
 </html>

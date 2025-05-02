@@ -6,27 +6,7 @@
   --color-bg-terciary: #D1D1D1;
   --color-text: #3b453c;
   --color-text-secondary: #282f29;
-  /*
-  --color-green-dark: #506a60;
-  --color-green-light: #a5b3a7;
-  --color-rose: #eecfcf;
-  --color-beige: #f2e9db;
-  --color-accent: #c2bfae;
-  */
 }
-
-/* EMAIL 
-
-Name
-Gmail
-
-service ID
-service_ciycazt
-
-template ID
-template_fvkdxna
-
-*/
 
 /* FONTS */
 
@@ -521,4 +501,61 @@ footer p:nth-of-type(2){
   transform: translateY(0);
 }
 
+/* MODAL */
 
+/* MODAL PERSONALIZADO */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-contenido {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text);
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 5px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.modal-contenido button {
+  background-color: var(--color-text-secondary);
+  color: var(--color-bg-primary);
+  font-size: 0.8em;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5em 1em;
+  margin-top: 30px;
+  cursor: pointer;
+  border: none;
+}
+
+.modal-contenido button:hover {
+  background-color: var(--color-text);
+}
+
+.modal-contenido h2 {
+  background: url(icon-env-sm.png) no-repeat center top;
+  padding-top: 70px;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+.modal-contenido p{
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
