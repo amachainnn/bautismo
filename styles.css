@@ -88,6 +88,10 @@ body {
   font-weight: 400;
 }
 
+.main img {
+  width: 250px;
+}
+
 /* BAPTISM */
 
 .baptism {
