@@ -159,7 +159,17 @@
           </div>
           <div class="mb-3" id="nombreInvitadoContainer" style="display: none;">
             <input type="text" name="nombre_invitado" id="nombreInvitado" placeholder="Nombre y apellido del invitado" class="form-control text-center" />
-          </div>        
+          </div> 
+          <div class="mb-3" id="comidaInvitadoContainer" style="display: none;">
+            <select name="comida_invitado" id="comidaInvitado" class="form-control">
+              <option value="" disabled selected>Preferencia de comida del invitado</option>
+              <option value="Tradicional">Tradicional</option>
+              <option value="Vegetariana">Vegetariana</option>
+              <option value="Vegana">Vegana</option>
+              <option value="Celíaca">Celíaca</option>
+            </select>
+          </div>
+                 
           <button type="submit" class="enviar">Enviar</button>
         </form>
       </div>
@@ -267,17 +277,26 @@
         const nombreInvitadoContainer = document.getElementById('nombreInvitadoContainer');
         const nombreInvitadoInput = document.getElementById('nombreInvitado');
 
+        const comidaInvitadoContainer = document.getElementById('comidaInvitadoContainer');
+        const comidaInvitadoSelect = document.getElementById('comidaInvitado');
+
         selectInvitado.addEventListener('change', function () {
           if (this.value === 'Sí') {
             nombreInvitadoContainer.style.display = 'block';
+            comidaInvitadoContainer.style.display = 'block';
             nombreInvitadoInput.setAttribute('required', 'required');
+            comidaInvitadoSelect.setAttribute('required', 'required');
           } else {
             nombreInvitadoContainer.style.display = 'none';
+            comidaInvitadoContainer.style.display = 'none';
             nombreInvitadoInput.removeAttribute('required');
+            comidaInvitadoSelect.removeAttribute('required');
             nombreInvitadoInput.value = '';
+            comidaInvitadoSelect.value = '';
           }
         });
       });
+
     </script>
 
 
